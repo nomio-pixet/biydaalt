@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+  <script>
+    // Хуудас ачаалагдсаны дараа ажиллах функц
+    window.onload = function() {
+      // <h1> элементийн текстийг өөрчлөх
+      const heading = document.querySelector("h1");
+      heading.textContent = "Welcome to the Login Page";
+      
+      // "Sign up" линк дээрх текстийг өөрчлөх
+      const signUpLink = document.querySelector(".decs");
+      signUpLink.textContent = "Create an Account";
+
+      // Login товчлуур дээрх текстийг өөрчлөх
+      const loginButton = document.querySelector("button");
+      loginButton.textContent = "Submit";
+    };
+  </script>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <form action="#">
+    <input type="text" placeholder="Enter username ...">
+    <input type="password" placeholder="Enter password ...">
+    <button onclick="login()">Login</button>
+  </form>
+  <a href="signup.html" class="decs">Sign up</a>
+</body>
+</html>
